@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Travel-App</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Sen&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/base.scss">
+    </head>
+
+    <body style="background-color: rgb(8, 8, 8);"> 
+ 
+        <header style="background-color: rgb(8, 8, 8);">
+            <h1 id="main-title" style="background-color: rgb(8, 8, 8); font-family: 'Montserrat', sans-serif; margin-top: 40px;">Udacity Travel App</h1>
+        </header>
+<br>
+        <main style="background-color:rgb(226, 204, 186);">
+            <div class ="MainDiv">
+                    <h1 class = "text" style = 'font-size: 37px;'>Trip Location: </h1>
+                    <input id="inputFirst"
+                           placeholder="Please enter city, state: Boston, MA"
+                           type="text">
+                    <h1 class = "text" style = 'font-size: 37px;'>Trip Start Date: </h1>
+                    <input id="inputSecond"
+                            placeholder="Trip Start Date"
+                            type="date">
+
+                    <h1 class = "text" style = 'font-size: 37px;'>Trip End Date: </h1>
+                    <input id="inputThird"
+                            placeholder="Trip End Date"
+                            type="date">
+
+                    <button class = "button" onClick = "Client.form()" type="button">Submit</button> 
+                    <p >Destination Country Code:<div id="country" style="color: aliceblue;"></div></p>
+                    <p style = "display: none;"><div id="desiredTripLoc" style="color: aliceblue;"></div></p>
+                    <p >Location Longitude:<div id="longitude" style="color: aliceblue;"></div></p>
+                    <p >Location Latitude:<div id="latitude"  style="color: aliceblue;"></div></p>
+                    <p>Countdown- Days Left Before Trip:<div id="countdown" style="color: aliceblue;"></div></p>
+                    <p>Duration of Trip:<div id="trip-length" style="color: aliceblue;"></div></p>
+                    <p>Weather Forecast:<br><ul id="weather" style="color: aliceblue;"></ul></p><br>
+                    <p style = "display: none;"><div id="image" class = "picz"></div></p style = "display: none">
+                </div>
+
+            <br>
+            <footer></footer>
+        </main>
+
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+
+    </body>
+</html>

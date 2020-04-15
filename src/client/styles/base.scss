@@ -1,0 +1,72 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 10px;
+}
+
+input {
+  padding: 10px 20px;
+  width: 30%;
+  line-height: 10px;
+  margin: 8px 0;
+}
+
+.text {
+  font-size: 10px;
+  color: whitesmoke;
+}
+
+#main-title {
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  font-size: 58px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.button {
+  background-color: rgb(3, 3, 3); 
+  border: solid 2.5px rgb(94, 94, 94);
+  color: rgb(255, 255, 255);
+  padding: 10px 32px;
+  margin: 20px;
+  margin-left: 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  font-family:'Montserrat', sans-serif;
+}
+
+
+main {
+  position: absolute;
+  top: 150px;
+  width: 100%;
+  min-height: 100%;
+  display: inline;
+  background-size: cover;
+  padding: 100px;
+  padding-top: 40px;
+  font-size: 35px;
+  align-content: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+img {
+  max-width: 70%;
+  align-content: center;
+  max-height: fit-content;
+  display: block;
+  margin: 0 auto;
+  margin-left: 40px;
+  object-fit: cover;
+  padding-bottom: 10;
+}
